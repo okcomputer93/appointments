@@ -36,7 +36,6 @@ class Appointment extends Model
             ]);
         }
         else {
-            if($this->motorcycles->left() == 0) return;
             $this->users()->save($user);
             $this->motorcycles->update([
                 'actual' => ++$this->motorcycles->actual

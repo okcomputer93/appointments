@@ -6,6 +6,7 @@ use App\Appointment;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
 
 class AppointmentController extends Controller
@@ -26,6 +27,7 @@ class AppointmentController extends Controller
      */
     public function select(Appointment $appointment) : RedirectResponse
     {
+        $this->authorize('update', $appointment);
         $appointment->toggleUser(request()->user());
         return back();
     }
