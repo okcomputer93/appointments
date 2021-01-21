@@ -13,4 +13,5 @@ Challenge #1 from [Hola mundo](https://www.youtube.com/watch?v=aouDQ8caJYg).
 -   Name: Marie Doe, Email: marie@example.com, Password: password
 -   Or you can register your own user.
 
-5. Done!
+5. You can change motorcycles in DB to test full hours.
+6. Done!
